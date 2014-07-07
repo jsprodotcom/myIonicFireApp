@@ -24,7 +24,7 @@ angular.module('bucketList.controllers', [])
                 }).then(function(user) {
                     $rootScope.hide();
                     $rootScope.userEmail = user.email;
-                    $window.location.href = ('#/bucket/list');
+                    $window.location.href = '#/bucket/list';
                 }, function(error) {
                     $rootScope.hide();
                     if (error.code == 'INVALID_EMAIL') {
